@@ -1,4 +1,5 @@
 import functions
+import sys
 
 welcome = "Welcome to Kamiti Money Manager."
 
@@ -21,25 +22,34 @@ if has_account.lower() == 'yes': ## if they have an account, they will need to l
 
 
 
+
+print("Please select one of the following options:")
+for option in options:
+    print("\t" + option.title())
+
 while True:
-    print("Please select one of the following options:")
-    for option in options:
-        print("\t" + option.title())
     selection = input("Please input one of the following options: ")
-    if selection.lower() == options[0]:
-        print("Okay, let's open an account.")
-    elif selection.lower() == options[1]:
-        print("Opening your account now.")
-    elif selection.lower() == options[2]:
-        print("Opening committee management suite now.")
-    elif selection.lower() == options[3]:
-        print("Taking you to the calculator now.")
-    elif selection.lower() == options[4]:
-        print("Opening credit score management suite now.")
-    elif selection.lower() == options[-1]:
-        print("Thank you for using the Kamiti Money Manager")
-        break
-    else:
+    if selection.lower() not in options:
         print("Sorry, that's not a valid option, please try again")
         continue
+    else:
+        break
+if selection.lower() == options[0]:
+    print("Okay, let's open an account.")
+elif selection.lower() == options[1]:
+    print("Opening your account now.")
+elif selection.lower() == options[2]:
+    print("Opening committee management suite now.")
+elif selection.lower() == options[3]:
+    print("Taking you to the calculator now.")
+elif selection.lower() == options[4]:
+    print("Opening credit score management suite now.")
+elif selection.lower() == options[-1]:
+    print("Thank you for using the Kamiti Money Manager")
+    sys.exit()
+
+## need to rewrite the above code into a function which converts the entry into a
+## number and then send us the right way
+
+
 

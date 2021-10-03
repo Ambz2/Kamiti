@@ -1,18 +1,20 @@
 import sys
-database = {'ameen':'dave2','mariya':'parantha61', 'ajeel': 'paranthawala64',
-            }
+import json
+
+database = {}
 options = {"quit": 0, "open account": 1, "view account": 2, "open committee": 3,
            "calculate contributions": 4, "view credit scores": 5,
            }
 
 def login():
     """Logs the user in, and returns true once password matches"""
-    username = input('Enter username: ')
-    if username in database.keys(): ## check if username is in database
+    login_name = input('Enter username: ')
+    ## Open's JSON dictionary and loads it into python.
+    if login_name in data.keys(): ## check if username is in database
         while True:
             password = input('Enter password: ')
-            if password in database[username]: #checks if password matches
-                print("Welcome " + str(username) + ".")
+            if password in data[login_name]: #checks if password matches
+                print("Welcome " + str(login_name) + ".")
                 return True
             else:
                 print('Invalid password. Please try again.')
@@ -30,9 +32,26 @@ def create_user():
             continue
         else:
             break
-    password = input("Please input your password: ")
-    database.update({username:password})
+    password = input("Please input a password: ")
+    database[username] = password
+    write_to_database()
+
     print("Account created.")
+
+
+
+def open_database():
+    """Opens up the database"""
+    with open("database.json","r") as file:
+        data = json.load(file)
+
+def write_to_database():
+    """Writes the username to the database"""0
+    with open("database.json", "r+") as file:
+        data = json.load(file)
+        data.update(database)
+        file.seek(0)
+        json.dump(data, file)
 
 def get_option():
 

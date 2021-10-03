@@ -1,5 +1,5 @@
 import functions
-import sys
+import json
 
 welcome = "Welcome to Kamiti Money Manager."
 

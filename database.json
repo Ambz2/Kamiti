@@ -1,8 +1,79 @@
 {
-  "bombo": {"password": "mylifeisdave",
-            "first_name": "Christian",
-            "last_name": "DiorDior",
-            "DOB": "22-08-1975",
-            "ID Number": "106148"
-            }
+    "amino": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "22/07/1958",
+        "first_name": "Christian",
+        "last_name": "Dior",
+        "password": "bambino"
+    },
+    "bombo": {
+        "DOB": "22-08-1975",
+        "ID Number": "106148",
+        "first_name": "Christian",
+        "last_name": "DiorDior",
+        "password": "mylifeisdave"
+    },
+    "bringerofdoom": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "26/05/1978]",
+        "first_name": "Drake",
+        "last_name": "Graham",
+        "password": "singer2"
+    },
+    "daveis": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "asas",
+        "first_name": "asa",
+        "last_name": "asa",
+        "password": "sasa"
+    },
+    "davis2": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "26/06/1978",
+        "first_name": "Dave",
+        "last_name": "Davies",
+        "password": "daveisgrate"
+    },
+    "diordior2": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "asdsad",
+        "first_name": "asdsao",
+        "last_name": "sadas",
+        "password": "bringer"
+    },
+    "gangsta2": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "22345",
+        "first_name": "dioriod",
+        "last_name": "diodio",
+        "password": "bombo2"
+    },
+    "jeffisdabest": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "26/07/2981",
+        "first_name": "dave",
+        "last_name": "jefferey",
+        "password": "jaffacakes2"
+    },
+    "mrbombo2": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "22/07/1958",
+        "first_name": "sixersixer99",
+        "last_name": "tolerance",
+        "password": "flightbird2"
+    },
+    "mrcrazyman": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "21324",
+        "first_name": "dsfse",
+        "last_name": "sadas",
+        "password": "bombo98"
+    },
+    "rainman1": {
+        "Account_Creation_Date": "2021-10-06",
+        "DOB": "22/05/1968",
+        "first_name": "Elvis",
+        "last_name": "Presley",
+        "password": "bomboclaat"
+    }
 }

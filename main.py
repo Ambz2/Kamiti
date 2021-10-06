@@ -1,6 +1,5 @@
-import functions
 import json
-
+from operations import *
 welcome = "Welcome to Kamiti Money Manager."
 
 options = {"quit": 0, "open account": 1, "view account": 2, "open committee": 3,
@@ -13,25 +12,22 @@ print("Do you already have an account?")
 has_account = input("Please enter Yes or No: ")
 
 if has_account.lower() == 'yes': ## if they have an account, they will need to log in
-    while True:
-        print("Please log into our systems.")
-        access_granted = functions.login()
-        if access_granted == True:
-            break
+    print("Please log into our systems.")
+    logged_in = login()
 else:
     print("Please sign up for an account to continue.")
     functions.create_user()
 
 
 
-while True:
+while logged_in[1]:
     print("Please select one of the following options:")
     for option in options.keys():
         print("\t" + option.title())
 
 
-    selected = functions.get_option()
-    functions.director(selected)
+    selected = get_option()
+    director(selected)
 
 ## need to rewrite the above code into a function which converts the entry into a
 ## number and then send us the right way

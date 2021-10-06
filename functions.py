@@ -63,7 +63,7 @@ def write_to_database(username, password, first_name, last_name, dob, data):
     database[username]["last_name"] = last_name
     database[username]["DOB"] = dob
     database[username]["Account_Creation_Date"] = get_creation_date()
-    database[username]["Customer_ID_Number"] = id_generator(data)
+    database[username]["ID_Number"] = id_generator(data)
     with open("database.json", "r+") as file:
         data = json.load(file)
         data.update(database)
